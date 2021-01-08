@@ -1,0 +1,65 @@
+.Note-category {
+  font-family: "-apple-system", "BlinkMacSystemFont", "Apple SD Gothic Neo",
+    "inter", "NanumSquare", "Segoe UI", Sans-Serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.Note-category-container {
+  margin-top: 0.5rem;
+}
+
+.Note-category-text {
+  margin-top: 1rem;
+  display: inline-block;
+  margin-left: 0.5rem;
+  color: rgb(159, 154, 155);
+  font-weight: 500;
+}
+
+.Note-category-item {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  padding: 0.4rem 0.8rem;
+  margin: 0.3rem 0;
+  justify-content: space-between;
+  transition: 0.2s ease-in;
+  span {
+    vertical-align: middle;
+  }
+}
+
+.Note-category-item:hover {
+  transition: 0.2s ease-in;
+  background-color: rgb(229, 184, 53);
+  color: white;
+  border-radius: 8px;
+}
+
+.Note-category-label {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.9rem;
+  margin: 0 0.8rem;
+}
+
+.Note-post-count {
+  transition: 0.2s ease-in;
+  color: #9a9a9a;
+}
+.Note-category-item:hover .Note-post-count {
+  transition: 0.2s ease-in;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .Note-category-text {
+    display: none;
+  }
+  .Note-category-item {
+    display: none;
+  }
+  .Note-category-label {
+    display: none;
+  }
+}

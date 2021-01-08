@@ -1,0 +1,16 @@
+.Message {
+  position: static;
+  .post-content {
+    padding: 0 2rem 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Message {
+    position: static;
+    .post-content {
+      margin: 0;
+      margin-top: 2rem !important;
+    }
+  }
+}

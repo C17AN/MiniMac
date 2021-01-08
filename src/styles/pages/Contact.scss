@@ -1,0 +1,25 @@
+.Contact {
+  width: 60% !important;
+}
+
+.Contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.Contact-wordCloud {
+  width: 70%;
+}
+
+@media (max-width: 600px) {
+  .Contact {
+    width: 90% !important;
+  }
+  .Contact-wordCloud {
+    width: 100%;
+    margin: 2rem;
+    transform: scale(1.3);
+  }
+}

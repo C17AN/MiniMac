@@ -1,0 +1,34 @@
+.post-top {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  background-color: rgb(234, 229, 229);
+  width: inherit;
+  height: 3rem;
+  position: fixed;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+  z-index: 2;
+}
+
+.post-content {
+  padding: 3rem;
+  margin: 2rem;
+  height: 80vh;
+  font-family: "-apple-system", "BlinkMacSystemFont", "Apple SD Gothic Neo",
+    "inter", "NanumSquare", "Segoe UI", Sans-Serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  a {
+    font-weight: bold;
+    color: #261f64;
+  }
+  p {
+    line-height: 1.8rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .post-content {
+    padding: 3rem 0.7rem 0.7rem 0.7rem;
+    margin: 1.5rem;
+  }
+}

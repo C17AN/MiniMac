@@ -1,0 +1,22 @@
+.bio {
+  background: rgb(197, 228, 235);
+  background: linear-gradient(
+    90deg,
+    rgba(197, 228, 235, 1) 0%,
+    rgba(59, 120, 231, 0.41220238095238093) 100%
+  );
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+}
+.bio-name {
+  background-color: azure;
+  padding: 0.3rem 0.7rem;
+  border-radius: 8px;
+}
+.bio-avatar {
+}
+
+.bio-summary {
+  margin-top: 0.3rem;
+  color: #666666;
+}

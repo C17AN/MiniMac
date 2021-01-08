@@ -1,0 +1,64 @@
+.app-icon {
+  display: flex;
+  width: 7rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  cursor: pointer;
+
+  img {
+    width: 7rem;
+  }
+  img:hover {
+    animation: tremble 1.2s infinite;
+  }
+  label {
+    color: white;
+    font-weight: 500;
+    margin-top: 5px;
+    text-decoration: none;
+    font-family: "-apple-system", "BlinkMacSystemFont", "Apple SD Gothic Neo",
+      "NanumSquare", "Segoe UI", Sans-Serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .app-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    cursor: pointer;
+
+    label {
+      margin-top: 3px;
+    }
+  }
+}
+
+@keyframes tremble {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  15% {
+    transform: rotateZ(-7deg);
+  }
+  30% {
+    transform: rotateZ(7deg);
+  }
+  45% {
+    transform: rotateZ(-7deg);
+  }
+  60% {
+    transform: rotateZ(7deg);
+  }
+  70% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}

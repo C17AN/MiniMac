@@ -1,0 +1,13 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.post-wrapper {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1rem;
+}

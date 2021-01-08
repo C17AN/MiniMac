@@ -1,0 +1,167 @@
+.guest {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.guest:hover {
+  transition: 0.1s ease-in;
+  transform: scale(1.01);
+}
+
+.guest__name {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.guest__message {
+  // 멀티라인 텍스트를 "표시할 때"
+  white-space: pre-line;
+}
+
+.guestBook__container {
+  display: flex;
+  height: 100%;
+}
+
+.guestBook__guestList {
+  overflow-y: scroll;
+  overflow-x: visible;
+  flex: 3;
+  margin-right: 10vw;
+}
+
+.guestBook__guestList::-webkit-scrollbar {
+  display: none;
+}
+
+.guestBook__form {
+  height: 100%;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  border-top: 1px solid hsla(0, 0%, 0%, 0.07);
+  border-left: 1px solid #cdcdcd;
+  margin-top: 1rem;
+  margin-right: -4rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.guestBook__secret__container {
+  margin: 1rem 0;
+}
+
+.guestBook__secret {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.guestBook__name {
+  margin: 1rem 0;
+  padding: 0.4rem;
+  border-radius: 6px;
+  border: 1px solid hsla(0, 0%, 0%, 0.3);
+}
+
+.guestBook__secret__label {
+  margin: 0 0.5rem;
+}
+
+.guestBook__button {
+  border-radius: 10px;
+  border: 0px;
+  color: white;
+  background-color: #2758c0;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.4rem 0;
+  margin-top: 1rem;
+  width: 100%;
+}
+.guestBook__button:disabled {
+  color: rgb(31, 31, 31);
+  background-color: #c5c8cf;
+}
+
+.guestBook__message {
+  resize: none;
+  border-radius: 6px;
+  padding: 0.4rem;
+  border: 1px solid hsla(0, 0%, 0%, 0.3);
+}
+
+.guestBook__date {
+  text-align: center;
+  position: relative;
+  top: -14.5rem;
+  font-size: 0.7rem;
+}
+
+.bubble {
+  display: inline-block;
+  position: relative;
+  font-size: 0.8rem;
+  top: -13.5rem;
+  width: 85%;
+  background: rgb(228, 227, 230);
+  border-radius: 16px;
+  padding: 0.5rem;
+  text-align: center;
+  color: #000;
+}
+
+.bubble-bottom-left:before {
+  transform: rotateZ(12deg);
+  content: "";
+  width: 0px;
+  z-index: -1;
+  height: 0px;
+  position: absolute;
+  border-left: 24px solid rgb(228, 227, 230);
+  border-right: 12px solid transparent;
+  border-top: 12px solid rgb(228, 227, 230);
+  border-bottom: 20px solid transparent;
+  left: 12px;
+  bottom: -15px;
+}
+
+@media (max-width: 600px) {
+  .guest {
+    width: 100%;
+  }
+  .guestBook__guestList {
+    width: 100%;
+  }
+  .guestBook__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .guestBook__secret__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+  }
+  .guestBook__form {
+    border-top: none;
+    border-left: none;
+    margin-right: 0;
+    padding: 0;
+  }
+  .guestBook__button {
+    padding: 0.7rem 0;
+    margin-top: 0;
+    width: 60%;
+  }
+  .bubble {
+    display: none;
+  }
+
+  .guestBook__date {
+    display: none;
+  }
+}

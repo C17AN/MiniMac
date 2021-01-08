@@ -1,0 +1,33 @@
+.TopButton {
+  width: 5rem;
+  display: flex;
+  justify-content: space-around;
+
+  span {
+    cursor: pointer;
+  }
+}
+
+.button-red {
+  display: inline-block;
+  background-color: rgb(251, 70, 70);
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+}
+
+.button-yellow {
+  display: inline-block;
+  background-color: rgb(252, 175, 36);
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+}
+
+.button-green {
+  display: inline-block;
+  background-color: rgb(41, 195, 51);
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+}

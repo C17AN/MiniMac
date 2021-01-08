@@ -1,0 +1,114 @@
+.Setting {
+  width: 70% !important;
+  height: 80% !important;
+  overflow: hidden !important;
+}
+
+.Setting-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Setting-icons {
+  display: flex;
+  width: 100%;
+  margin-top: 1rem;
+  flex-direction: row;
+  justify-content: center;
+  animation: pump 1.8s infinite;
+}
+
+.Setting-icon {
+  width: 10rem;
+  margin: 0 2rem;
+}
+
+.Setting-description {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  font-family: "NanumSquare", "Segoe UI", Sans-Serif;
+  color: #6c6c6c;
+}
+
+.Setting-developer {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  a {
+    display: inline-block;
+    color: #1d6fbb;
+    background-color: #ecf0f2;
+    padding: 2px 6px;
+    border-radius: 8px;
+    font-weight: bolder;
+    animation: flutter 1.2s infinite;
+  }
+}
+
+.Setting-license {
+  width: 100%;
+  position: absolute;
+  bottom: 2rem;
+  font-size: 1.1rem;
+  text-align: right;
+  margin-top: 1rem;
+  color: #747d8b;
+  font-weight: 300;
+  width: 90%;
+  padding: 1rem 0;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+@media (max-width: 600px) {
+  .Setting {
+    width: 90% !important;
+    height: 80% !important;
+    overflow: scroll !important;
+  }
+  .Setting-icons {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Setting-icon {
+    width: 7rem;
+    margin: 1rem 0;
+  }
+  .Setting-description {
+    font-size: 1.2rem;
+  }
+  .Setting-developer {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+  .Setting-license {
+    position: static;
+    font-size: 0.88rem;
+    text-align: right;
+    width: 100%;
+  }
+}
+
+@keyframes pump {
+  50% {
+    transform: scale(1.06);
+  }
+}
+
+@keyframes flutter {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(7deg);
+  }
+  66% {
+    transform: rotate(-7deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+}

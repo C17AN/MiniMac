@@ -1,5 +1,8 @@
 .Contact {
   width: 60% !important;
+
+  .post-content {
+  }
 }
 
 .Contact-container {
@@ -7,6 +10,7 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 2rem;
+  width: 100%;
 }
 
 .Contact-wordCloud {
@@ -18,7 +22,7 @@
     width: 90% !important;
   }
   .Contact-wordCloud {
-    width: 100%;
+    width: 90%;
     margin: 2rem;
     transform: scale(1.3);
   }

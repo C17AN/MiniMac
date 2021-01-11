@@ -278,6 +278,13 @@ a:focus {
   user-select: none; /* Future-proof*/
 }
 
+figcaption {
+  text-align: center;
+  margin: 1rem 0 1.5rem 0;
+  color: #666666;
+  font-size: 0.9rem;
+}
+
 .global-wrapper {
   /* margin: var(--spacing-0) auto;
   padding: var(--spacing-10) var(--spacing-5); */

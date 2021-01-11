@@ -252,6 +252,14 @@ a:focus {
   text-decoration: none;
 }
 
+/* image */
+img {
+  max-width: 100%;
+  margin: 0.5rem 0 1rem 0;
+  border: 1px solid #cdcdcd;
+  border-radius: 8px;
+}
+
 /* Custom classes */
 
 .background {

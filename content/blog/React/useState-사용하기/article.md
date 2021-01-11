@@ -1,5 +1,5 @@
 ---
-title: "[React] - 리액트 훅 한방에 정리하기 : 1편"
+title: "[React] - useState 훅에 대하여"
 date: 2020-12-24 12:21:13
 category: "React"
 color: "#61DBFB"

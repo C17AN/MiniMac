@@ -4,6 +4,7 @@
   padding-left: 1rem;
   background-color: rgb(234, 229, 229);
   width: inherit;
+  min-width: 800px;
   height: 3rem;
   position: fixed;
   overflow: hidden;
@@ -14,7 +15,8 @@
 .post-container {
   position: absolute;
   opacity: 0.98;
-  width: 90%;
+  width: 75%;
+  min-width: 800px;
   height: 90%;
   background-color: white;
   border-radius: 12px;
@@ -24,7 +26,9 @@
   box-shadow: -3px 17px 23px 1px rgba(0, 0, 0, 0.58);
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
 
+.blog-post {
   img {
     max-width: 100%;
     margin: 0.5rem 0 1rem 0;
@@ -50,6 +54,13 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .post-top {
+    min-width: auto;
+  }
+  .post-container {
+    width: 90%;
+    min-width: auto;
+  }
   .post-content {
     padding: 3rem 0.7rem 0.7rem 0.7rem;
     margin: 1.5rem;

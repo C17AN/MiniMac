@@ -1,5 +1,5 @@
 ---
-title: "[이야기] - Electron을 활용한 주식 시세앱 제작기"
+title: "[제작기] - Electron을 활용한 주식 시세앱 제작기"
 date: 2021-01-15 12:21:13
 category: "일상 & 제작기"
 color: "#66cccc"

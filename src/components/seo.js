@@ -47,6 +47,10 @@ const SEO = ({ description, lang, meta, title }) => {
           content: `wD0KSN8B6LGhPSmmNiCWL5ZrRvc2jVjJWngCiKeQwTg`,
         },
         {
+          name: `naver-site-verification`,
+          content: `c7b9bba76e3fccf72ac31f7b61d594cd0ec2d023`,
+        },
+        {
           property: `og:title`,
           content: `찬미니즘`,
         },

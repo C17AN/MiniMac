@@ -1,5 +1,5 @@
 import React from "react"
-import { navigate } from "gatsby"
+import { navigate, navigateTo } from "gatsby"
 import "./TopButton.scss"
 
 function TopButton() {
@@ -7,7 +7,7 @@ function TopButton() {
     <div className="TopButton">
       <span className="button-red" onClick={() => navigate(-1)}></span>
       <span className="button-yellow"></span>
-      <span className="button-green"></span>
+      <span className="button-green" onClick={() => navigateTo("/")}></span>
     </div>
   )
 }

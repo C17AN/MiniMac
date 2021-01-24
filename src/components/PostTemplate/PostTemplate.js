@@ -4,14 +4,17 @@ import { Link, graphql } from "gatsby"
 import "../../styles/pages/Note.scss"
 import "./PostTemplate.scss"
 import TopButton from "../../components/TopButton/TopButton"
+import PostContent from "../PostContent/PostContent"
 
-const PostTemplate = ({ children, classAlias }) => {
+const PostTemplate = ({ children, classAlias, innerHeight, innerWidth }) => {
   return (
     <div className={`post-container ${classAlias}`}>
       <div className="post-top">
         <TopButton />
       </div>
-      <div className="post-content">{children}</div>
+      <PostContent innerHeight={innerHeight} innerWidth={innerWidth}>
+        {children}
+      </PostContent>
     </div>
   )
 }

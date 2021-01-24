@@ -6,9 +6,13 @@
 
 .Setting-container {
   display: flex;
+  height: 60vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transform-style: preserve-3d;
+  transform: translateZ(0);
+  transition: all 0.75s ease-out;
 }
 
 .Setting-icons {
@@ -17,7 +21,7 @@
   margin-top: 1rem;
   flex-direction: row;
   justify-content: center;
-  animation: pump 1.8s infinite;
+  transition: all 0.75s ease-out;
 }
 
 .Setting-icon {
@@ -32,6 +36,7 @@
   font-size: 1.6rem;
   font-family: "NanumSquare", "Segoe UI", Sans-Serif;
   color: #6c6c6c;
+  transition: all 0.75s ease-out;
 }
 
 .Setting-developer {
@@ -46,11 +51,11 @@
     font-weight: bolder;
     animation: flutter 1.2s infinite;
   }
+  transition: all 0.75s ease-out;
 }
 
 .Setting-license {
   width: 100%;
-  position: absolute;
   bottom: 2rem;
   font-size: 1.1rem;
   text-align: right;
@@ -59,7 +64,31 @@
   font-weight: 300;
   width: 90%;
   padding: 1rem 0;
+  transition: all 0.75s ease-out;
   border-bottom: 1px solid #cdcdcd;
+}
+
+.containerAnimated {
+  border: 1px solid #cdcdcd;
+  border-radius: 30px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 25px rgba(0, 0, 0, 0.2);
+  transform: translateZ(150px);
+}
+
+.iconsAnimated {
+  transform: translateZ(175px);
+}
+
+.descriptionAnimated {
+  transform: translateZ(150px);
+}
+
+.aboutAnimated {
+  transform: translateZ(160px);
+}
+
+.lisenceAnimated {
+  transform: translateZ(150px);
 }
 
 @media (max-width: 600px) {

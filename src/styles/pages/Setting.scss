@@ -105,7 +105,12 @@
   .Setting-icon {
     width: 7rem;
     margin: 1rem 0;
+    animation: pump 1s infinite;
   }
+  .Setting-container {
+    transform: none !important;
+  }
+
   .Setting-description {
     font-size: 1.2rem;
   }
@@ -118,6 +123,29 @@
     font-size: 0.88rem;
     text-align: right;
     width: 100%;
+  }
+
+  .containerAnimated {
+    border: none;
+    transform: none;
+    border-radius: 0;
+    transform: none;
+    box-shadow: none;
+  }
+  .iconsAnimated {
+    transform: none;
+  }
+
+  .descriptionAnimated {
+    transform: none;
+  }
+
+  .aboutAnimated {
+    transform: none;
+  }
+
+  .lisenceAnimated {
+    transform: none;
   }
 }
 

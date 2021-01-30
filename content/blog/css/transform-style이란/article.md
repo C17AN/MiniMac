@@ -17,7 +17,7 @@ CSS의 transform 속성을 활용하면 이미지나 요소를 x, y, z축으로 
 
 ## 우리가 보는 화면은 납작해!
 
-<img src = "2.png" alt = "2">
+<img src = "2.png" alt = "2" width = "300"/>
 <figcaption>1. 우리가 생각하는 원기둥 / 2. 원기둥을 바로 앞에서 보았을 때</figcaption>
 
 공책에 원기둥을 그린 후 공책을 빙글빙글 돌려 보세요.  

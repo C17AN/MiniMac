@@ -38,7 +38,6 @@
     "typeface-montserrat": "0.0.75"
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0",
     "prettier": "2.1.2",
     "sass-loader": "^10.1.0"
   },

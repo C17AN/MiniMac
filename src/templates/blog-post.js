@@ -15,7 +15,6 @@ const BlogPostTemplate = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <PostTemplate>
-        {" "}
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}

@@ -66,7 +66,6 @@ const IconElement = ({ fileName, iconLabel }) => {
   `)
   return (
     <Link className="app-icon" to={`/${fileName}`}>
-      {/* <img src={`../../icons/${fileName}-min.png`} maxWidth="1000px"></img> */}
       <Img
         fluid={Icon[`${fileName}Icon`].childImageSharp.fluid}
         alt="Icon"

@@ -59,10 +59,10 @@ const BlogIndex = ({ data, location }) => {
                 ? post.frontmatter.category === selectedCategory
                 : true
             )
-            .map(post => {
+            .map((post, idx) => {
               const title = post.frontmatter.title || post.fields.slug
               return (
-                <Link to={`${post.fields.slug}`} itemProp="url">
+                <Link key={idx} to={`${post.fields.slug}`} itemProp="url">
                   <li key={post.fields.slug}>
                     <article
                       className="post-list-item"
@@ -73,11 +73,20 @@ const BlogIndex = ({ data, location }) => {
                         <h2>
                           <span itemProp="headline">{title}</span>
                         </h2>
+                      </header>
+                      <section>
+                        <p
+                          dangerouslySetInnerHTML={{
+                            __html: post.excerpt || post.frontmatter.excerpt,
+                          }}
+                          itemProp="description"
+                        />
                         <div
                           style={{
                             fontSize: "0.8rem",
                             display: "flex",
                             alignItems: "center",
+                            marginTop: "1rem",
                           }}
                         >
                           <span
@@ -92,14 +101,6 @@ const BlogIndex = ({ data, location }) => {
                           ></span>
                           {post.frontmatter.category} / {post.frontmatter.date}
                         </div>
-                      </header>
-                      <section>
-                        <p
-                          dangerouslySetInnerHTML={{
-                            __html: post.excerpt || post.frontmatter.excerpt,
-                          }}
-                          itemProp="description"
-                        />
                       </section>
                     </article>
                     <div className="Note-borderLine"></div>

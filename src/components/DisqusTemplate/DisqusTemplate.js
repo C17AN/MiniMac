@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { Disqus } from "gatsby-plugin-disqus"
+//import { Disqus } from "gatsby-plugin-disqus"
+import { DiscussionEmbed } from "disqus-react"
 
 const DisqusTemplate = ({ pageContext, location }) => {
   const DisqusConfig = useStaticQuery(graphql`
@@ -20,13 +21,21 @@ const DisqusTemplate = ({ pageContext, location }) => {
   `)
   const siteUrl = DisqusConfig.site.siteMetadata.siteUrl + location.pathname
   let disqusConfig = {
-    url: siteUrl,
-    identifier: siteUrl,
-    title: DisqusConfig.site.siteMetadata.title,
+    // url: siteUrl,
+    // identifier: siteUrl,
+    // title: DisqusConfig.site.siteMetadata.title,
+    shortname: "c17an",
+    config: {
+      identifier: siteUrl,
+      title: DisqusConfig.site.siteMetadata.title,
+    },
   }
+
   return (
     <>
-      <Disqus config={disqusConfig} />
+      {/* <Disqus config={disqusConfig} /> */}
+
+      <DiscussionEmbed {...disqusConfig} />
     </>
   )
 }

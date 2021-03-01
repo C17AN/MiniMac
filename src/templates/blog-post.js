@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import PostTemplate from "../components/PostTemplate/PostTemplate"
 import DisqusTemplate from "../components/DisqusTemplate/DisqusTemplate"
 import "../styles/blog-post.scss"
+import Utterance from "../components/Utterance/Utterance"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -49,21 +50,22 @@ const BlogPostTemplate = ({ data, location }) => {
             <li className="navigator">
               {previous && (
                 <Link to={previous.fields.slug} rel="prev">
-                  ← {previous.frontmatter.title}
+                  이전 글 : {previous.frontmatter.title}
                 </Link>
               )}
             </li>
             <li className="navigator">
               {next && (
                 <Link to={next.fields.slug} rel="next">
-                  {next.frontmatter.title} →
+                  다음 글 : {next.frontmatter.title}
                 </Link>
               )}
             </li>
           </ul>
         </nav>
         <footer>
-          <DisqusTemplate location={location}></DisqusTemplate>
+          <Utterance repo="c17an/minimac" />
+          {/* <DisqusTemplate location={location}></DisqusTemplate> */}
         </footer>
       </PostTemplate>
     </Layout>

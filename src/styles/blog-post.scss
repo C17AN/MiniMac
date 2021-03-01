@@ -30,9 +30,14 @@
 
 .blog-post {
   img {
+    transition: 0.3s ease-out !important;
     max-width: 100%;
     border: 1px solid #cdcdcd;
     border-radius: 8px;
+  }
+  img:hover {
+    transition: 0.3s ease-out !important;
+    box-shadow: 0px 5px 8px 5px rgba(0, 0, 0, 0.4) !important;
   }
 }
 

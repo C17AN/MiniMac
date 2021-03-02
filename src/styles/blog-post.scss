@@ -31,9 +31,10 @@
 .blog-post {
   img {
     transition: 0.3s ease-out !important;
-    max-width: 100%;
+    max-width: 500px;
     border: 1px solid #cdcdcd;
     border-radius: 8px;
+    margin: 0px auto;
   }
   img:hover {
     transition: 0.3s ease-out !important;
@@ -68,5 +69,10 @@
   .post-content {
     padding: 3rem 0.7rem 0.7rem 0.7rem;
     margin: 1.5rem;
+  }
+  .blog-post {
+    img {
+      max-width: 100%;
+    }
   }
 }

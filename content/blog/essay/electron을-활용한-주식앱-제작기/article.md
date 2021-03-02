@@ -104,7 +104,7 @@ async function fetchData() {
 원래 뭐든 개발하다 보면 에러와 한숨이 끊이질 않기 마련인데 이번 결과물은 이상할 정도로 순탄하게 끝났다.  
 일렉트론은 어플리케이션을 조작하는 부분과 화면을 담당하는 부분이 완전히 분리되어 있는데, 이번에는 어플리케이션 부분을 보일러플레이트를 사용하다 보니 큰 어려움 없이 화면과 API 요청 처리에만 집중할 수 있었던 것 같다.
 
-<div style = "width: 500px; 
+<div style = "
   margin-left: auto;
   margin-right: auto;">
 <img src = '5.gif' alt = "5" />

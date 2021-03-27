@@ -13,10 +13,12 @@ const Home = ({ data, location }) => {
       <SEO title={siteTitle} />
       <div id="blog-title">
         <img src="https://img.icons8.com/fluent-systems-filled/24/ffffff/search.png" />
-        <span style={{ display: "inline-block", marginLeft: "0.5rem" }}>
-          {" "}
-          Chan's Dev Note
-        </span>
+        <p
+          className="title-text"
+          style={{ display: "inline-block", marginLeft: "0.5rem" }}
+        >
+          찬민의 개발일기
+        </p>
       </div>
       <div id="apps-dock">
         <IconElement fileName="Project" iconLabel="프로젝트"></IconElement>

@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 import PostTemplate from "../components/PostTemplate/PostTemplate"
+import { graphql } from "gatsby"
 import "../styles/pages/Contact.scss"
 
 function Contact({ data, location }) {

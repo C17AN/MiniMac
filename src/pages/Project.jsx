@@ -9,19 +9,6 @@ import { StaticQuery, graphql } from "gatsby"
 import "swiper/swiper.scss"
 import "swiper/components/effect-fade/effect-fade.scss"
 
-graphql`
-  query dataQuery {
-    allDataJson {
-      edges {
-        node {
-          label
-          link
-        }
-      }
-    }
-  }
-`
-
 SwiperCore.use([EffectCoverflow])
 
 function Project({ data, location }) {

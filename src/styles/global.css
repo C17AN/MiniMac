@@ -109,12 +109,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "-apple-system", "BlinkMacSystemFont", "Apple SD Gothic Neo",
+  /* font-family: "-apple-system", "BlinkMacSystemFont", "Apple SD Gothic Neo",
     "inter", "Noto Sans KR", "Segoe UI", Sans-Serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
-  margin-top: 2.5rem;
-  margin-bottom: var(--spacing-6);
-  letter-spacing: -0.025em;
+  letter-spacing: -0.025em; */
 }
 
 h2,
@@ -122,17 +120,21 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: var(--fontWeight-bold);
-  color: var(--color-heading);
+  /* font-weight: var(--fontWeight-bold); */
+  /* color: var(--color-heading); */
 }
 
 h1 {
   font-size: 2rem;
   color: var(--color-heading-black);
+  margin-top: 2.5rem;
+  margin-bottom: var(--spacing-6);
 }
 
 h2 {
   font-size: 1.7rem;
+  margin-top: 2.5rem;
+  margin-bottom: var(--spacing-6);
 }
 
 h3 {
@@ -144,11 +146,14 @@ h4 {
 }
 
 h5 {
-  font-size: var(--fontSize-2);
+  font-size: 0.95rem;
 }
 
 h6 {
-  font-size: var(--fontSize-1);
+  font-size: 0.88rem;
+  margin-top: 0;
+  margin-bottom: var(--spacing-4);
+  font-weight: normal;
 }
 
 h1 > a {

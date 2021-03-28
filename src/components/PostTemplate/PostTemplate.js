@@ -1,6 +1,4 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-
 import "../../styles/pages/Note.scss"
 import "./PostTemplate.scss"
 import TopButton from "../../components/TopButton/TopButton"

@@ -12,8 +12,7 @@ draft: false
 평소에도 주식에 관심이 많아 주식앱을 자주 들여다 보는데, 한국투자증권 앱은 매번 켤때마다 비밀번호를 입력해야 하는게 너무 귀찮았다.  
 그래서 맥 상단바에 내가 원하는 종목의 시세를 즉시 조회할 수 있는 어플리케이션이 있으면 참 좋겠다고 생각해 앱 스토어를 뒤지기 시작했다.
 
-<div style = "width: 300px; 
-  margin-left: auto;
+<div style = "width: 300px; margin-left: auto;
   margin-right: auto;">
 <img src = '1.png' alt = "1" />
 </div>

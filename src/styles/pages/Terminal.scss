@@ -1,0 +1,199 @@
+.Terminal-content {
+  padding: 0 !important;
+  margin: 0 0 !important;
+  margin-top: 45px !important;
+  height: 100% !important;
+  overflow-y: hidden;
+}
+.fakeScreen {
+  background-color: #151515;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  margin: 0 auto;
+}
+
+.line-container {
+  padding-top: 40px;
+  position: absolute;
+  left: 50px;
+
+  p {
+    text-align: left;
+    width: 300px;
+    font-size: 1.25em;
+    font-family: monospace;
+    white-space: normal;
+    overflow: hidden;
+    width: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .line-container {
+    padding-top: 25px;
+    position: absolute;
+    left: 20px;
+    p {
+      font-size: 12px;
+      font-family: monospace;
+      white-space: normal;
+      overflow: hidden;
+      width: 0;
+    }
+  }
+  .Terminal-content {
+    padding: 0 !important;
+    margin: 0 0 !important;
+    margin-top: 35px !important;
+    height: 100% !important;
+    overflow-y: hidden;
+  }
+}
+
+span {
+  color: #fff;
+  font-weight: bold;
+}
+
+.line1 {
+  color: #cbe1e9;
+  width: 100%;
+  -webkit-animation: type 0.5s 1s steps(20, end) forwards;
+  -moz-animation: type 0.5s 1s steps(20, end) forwards;
+  -o-animation: type 0.5s 1s steps(20, end) forwards;
+  animation: type 0.5s 1s steps(20, end) forwards;
+}
+
+.cursor1 {
+  -webkit-animation: blink 1s 2s 2 forwards;
+  -moz-animation: blink 1s 2s 2 forwards;
+  -o-animation: blink 1s 2s 2 forwards;
+  animation: blink 1s 2s 2 forwards;
+}
+
+.cursor2 {
+  -webkit-animation: blink 1s 5.25s 2 forwards;
+  -moz-animation: blink 1s 5.25s 2 forwards;
+  -o-animation: blink 1s 5.25s 2 forwards;
+  animation: blink 1s 5.25s 2 forwards;
+}
+
+.cursor3 {
+  -webkit-animation: blink 1s 8.5s 2 forwards;
+  -moz-animation: blink 1s 8.5s 2 forwards;
+  -o-animation: blink 1s 8.5s 2 forwards;
+  animation: blink 1s 8.5s 2 forwards;
+}
+
+.line4 {
+  color: #fff;
+  -webkit-animation: type 0.5s 10.75s steps(20, end) forwards;
+  -moz-animation: type 0.5s 10.75s steps(20, end) forwards;
+  -o-animation: type 0.5s 10.75s steps(20, end) forwards;
+  animation: type 0.5s 10.75s steps(20, end) forwards;
+}
+
+.cursor4 {
+  -webkit-animation: blink 1s 11.5s infinite;
+  -moz-animation: blink 1s 8.5s infinite;
+  -o-animation: blink 1s 8.5s infinite;
+  animation: blink 1s 8.5s infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes type {
+  to {
+    width: 50rem;
+  }
+}
+
+@-moz-keyframes type {
+  to {
+    width: 50rem;
+  }
+}
+
+@-o-keyframes type {
+  to {
+    width: 50rem;
+  }
+}
+
+@keyframes type {
+  to {
+    width: 50rem;
+  }
+}

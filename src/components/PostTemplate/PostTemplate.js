@@ -10,7 +10,11 @@ const PostTemplate = ({ children, classAlias, innerHeight, innerWidth }) => {
       <div className="post-top">
         <TopButton />
       </div>
-      <PostContent innerHeight={innerHeight} innerWidth={innerWidth}>
+      <PostContent
+        innerHeight={innerHeight}
+        innerWidth={innerWidth}
+        classAlias={classAlias}
+      >
         {children}
       </PostContent>
     </div>

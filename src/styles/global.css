@@ -211,10 +211,10 @@ blockquote {
   margin-left: calc(-1 * var(--spacing-1));
   margin-right: var(--spacing-8);
   padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);
-  border-left: var(--spacing-1) solid var(--color-primary);
+  border-left: 8px solid #33a4ac91;
   font-size: 0.9rem;
   font-style: italic;
-  margin-bottom: var(--spacing-8);
+  margin: 1rem 0;
 }
 
 blockquote > :last-child {
@@ -284,7 +284,7 @@ a:focus {
 
 figcaption {
   text-align: center;
-  margin: 1rem 0 1.5rem 0;
+  margin: 0 0 1.5rem 0;
   color: #666666;
   font-size: 0.9rem;
 }
@@ -330,10 +330,6 @@ figcaption {
   margin-bottom: var(--spacing-2);
   margin-top: var(--spacing-0);
   line-height: 2.3rem;
-}
-
-.post-list-item header {
-  margin-bottom: 5px;
 }
 
 header > h2 {
@@ -401,7 +397,7 @@ header > h2 > span {
 }
 
 .gatsby-resp-image-wrapper {
-  margin: 2rem auto !important;
+  margin-bottom: 2rem !important;
 }
 
 .gatsby-resp-image-image {
@@ -423,5 +419,9 @@ header > h2 > span {
 @media only screen and (max-width: 600px) {
   html {
     font-size: 13px;
+  }
+
+  .post-list-item header {
+    margin-bottom: 0px;
   }
 }

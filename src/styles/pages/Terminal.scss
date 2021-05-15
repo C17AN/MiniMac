@@ -1,9 +1,13 @@
+.Terminal {
+  overflow-y: hidden !important;
+}
+
 .Terminal-content {
   padding: 0 !important;
   margin: 0 0 !important;
   margin-top: 45px !important;
   height: 100% !important;
-  overflow-y: hidden;
+  overflow-y: unset;
 }
 .fakeScreen {
   background-color: #151515;
@@ -37,40 +41,63 @@
     left: 20px;
     p {
       font-size: 12px;
-      font-family: monospace;
-      white-space: normal;
-      overflow: hidden;
-      width: 0;
     }
   }
   .Terminal-content {
-    padding: 0 !important;
-    margin: 0 0 !important;
     margin-top: 35px !important;
-    height: 100% !important;
-    overflow-y: hidden;
   }
-}
-
-span {
-  color: #fff;
-  font-weight: bold;
 }
 
 .line1 {
   color: #cbe1e9;
-  width: 100%;
-  -webkit-animation: type 0.5s 1s steps(20, end) forwards;
-  -moz-animation: type 0.5s 1s steps(20, end) forwards;
-  -o-animation: type 0.5s 1s steps(20, end) forwards;
-  animation: type 0.5s 1s steps(20, end) forwards;
+  overflow: hidden;
+  width: 0%;
+  height: 2rem;
+  -webkit-animation: type 3s 1s steps(20, end) forwards;
+  -moz-animation: type 3s 1s steps(20, end) forwards;
+  -o-animation: type 3s 1s steps(20, end) forwards;
+  animation: type 3s 1s steps(20, end) forwards;
+}
+
+.login {
+  color: #cbe1e9;
+  height: 2rem;
+  width: 50rem !important;
+}
+
+.git-add {
+  color: #cbe1e9;
+  width: 0%;
+  height: 2rem;
+  -webkit-animation: type 3s 1s ease-in-out forwards;
+  -moz-animation: type 3s 1s ease-in-out forwards;
+  -o-animation: type 3s 1s ease-in-out forwards;
+  animation: type 3s 1s ease-in-out forwards;
+}
+
+.git-commit {
+  color: #cbe1e9;
+  width: 0%;
+  height: 2rem;
+  -webkit-animation: type 3s 3s ease-in-out forwards;
+  -moz-animation: type 3s 3s ease-in-out forwards;
+  -o-animation: type 3s 3s ease-in-out forwards;
+  animation: type 3s 3s ease-in-out forwards;
+}
+
+.commit-message {
+  color: #ffffff;
+  width: 50rem !important;
+  height: 2rem;
+  opacity: 0;
+  animation: appear 1s 5s steps(1, end) forwards;
 }
 
 .cursor1 {
-  -webkit-animation: blink 1s 2s 2 forwards;
-  -moz-animation: blink 1s 2s 2 forwards;
-  -o-animation: blink 1s 2s 2 forwards;
-  animation: blink 1s 2s 2 forwards;
+  -webkit-animation: blink 2s 2s 2 forwards;
+  -moz-animation: blink 2s 2s 2 forwards;
+  -o-animation: blink 2s 2s 2 forwards;
+  animation: blink 2s 2s 2 forwards;
 }
 
 .cursor2 {
@@ -195,5 +222,29 @@ span {
 @keyframes type {
   to {
     width: 50rem;
+  }
+}
+
+@-webkit-keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
   }
 }

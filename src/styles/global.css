@@ -422,6 +422,6 @@ header > h2 > span {
   }
 
   .post-list-item header {
-    margin-bottom: 0px;
+    margin-bottom: 10px;
   }
 }

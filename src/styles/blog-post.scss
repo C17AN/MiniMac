@@ -33,7 +33,14 @@
     transition: 0.3s ease-out !important;
     border: 1px solid #cdcdcd;
     border-radius: 8px;
-    margin: 0px auto;
+    margin: 0px auto !important;
+    max-width: 600px !important;
+  }
+  p {
+    img {
+      width: 100%;
+      margin: 1rem auto !important;
+    }
   }
   img:hover {
     transition: 0.3s ease-out !important;
@@ -70,8 +77,11 @@
     margin: 1.5rem;
   }
   .blog-post {
-    img {
-      max-width: 90%;
+    p {
+      img {
+        width: 100%;
+        margin: 1rem auto !important;
+      }
     }
   }
 }

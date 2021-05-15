@@ -25,6 +25,8 @@ const App = ({ name, age }) => {
 
 `App` 컴포넌트에서 name과 age 라는 속성을 구조 분해 할당 문법으로 받아오는 모습인데요, 만약 상위 컴포넌트로부터 name과 age 속성을 전달받지 못하면 해당 값은 `undefined` 가 됩니다.
 
+###
+
 이런 경우를 방지하기 위해 리액트에서는 `defaultProps` 라는 특수한 프로퍼티를 사용해 속성의 기본값을 정해줄 수 있습니다.
 
 ```js
@@ -45,7 +47,9 @@ App.defaultProps = {
 
 이제 이름과 나이가 `undefined` 라고 나타나는 일은 막을 수 있게 되었습니다.
 
-그런데 뭔가 이상하지 않나요?  
+###
+
+그런데 뭔가 떠오르지 않나요?  
 객체의 구조 분해 할당을 수행할 때도 비슷한 작업을 수행할 수 있습니다.
 
 ```js
@@ -121,6 +125,8 @@ class App extends React.Component {
 
 하나의 커다란 함수 안에서 모든 작업이 이루어지는 함수 컴포넌트와는 다르게, 클래스 컴포넌트에서는 `render`, `componentDidMount` 등 여러 생명주기 함수가 각자 다른 스코프를 가지고 있습니다.
 
+###
+
 따라서 구조 분해 할당의 기본값을 사용하려면 위 예제처럼 각 생명주기 함수별로 작업을 수행해야 하는데요, 아무리 봐도 이건 그렇게 예쁜 코드가 아니죠?  
 그래서 등장한 것이 `defaultProps`인 것입니다.
 
@@ -153,7 +159,10 @@ App.defaultProps = {
 
 이렇게 `defaultProps`를 사용해 컴포넌트 내부의 모든 `this.props`의 기본값을 지정해줄 수 있게 된 것이죠.
 
-아무튼 클래스 컴포넌트의 시대가 저물고 있는 만큼 이제 `defaultProps`가 사용되는 코드는 점점 찾아보기 힘들어질 예정입니다.  
+아무튼 클래스 컴포넌트의 시대가 저물고 있는 만큼 이제 `defaultProps`가 사용되는 코드는 점점 찾아보기 힘들어질 예정입니다.
+
+###
+
 게다가 함수 컴포넌트에서는 \*<code class = "language-text" style = "color: red">deprecate</code> 판정까지 기다리고 있다고 하니 만나면 미리 작별인사를 해 주기로 해요! 🤣
 
 [[\*stackoverflow 링크]](https://stackoverflow.com/questions/47774695/react-functional-component-default-props-vs-default-parameters/56443098#56443098)

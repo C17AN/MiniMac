@@ -133,7 +133,7 @@ h1 {
 
 h2 {
   font-size: 1.7rem;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   margin-bottom: var(--spacing-6);
 }
 
@@ -152,7 +152,6 @@ h5 {
 h6 {
   font-size: 0.88rem;
   margin-top: 0;
-  margin-bottom: var(--spacing-4);
   font-weight: normal;
 }
 
@@ -175,8 +174,8 @@ h6 > a {
 p {
   --baseline-multiplier: 0.179;
   --x-height-multiplier: 0.35;
-  margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
   padding: var(--spacing-0);
+  margin: 0;
 }
 
 ul,
@@ -371,6 +370,7 @@ figcaption {
 
 .blog-post header p {
   font-size: var(--fontSize-2);
+  margin-bottom: 1rem;
 }
 
 .blog-post-nav ul {
@@ -379,13 +379,17 @@ figcaption {
 
 .gatsby-highlight {
   transition: 0.3s ease-out;
-  margin-bottom: var(--spacing-6);
+  margin: 1rem 0;
   border-radius: 8px;
 }
 
 .gatsby-highlight:hover {
   transition: 0.3s ease-out;
   box-shadow: 0px 5px 8px 5px rgba(0, 0, 0, 0.4);
+}
+
+.gatsby-resp-image-wrapper {
+  margin: 2rem auto !important;
 }
 
 .gatsby-resp-image-image {

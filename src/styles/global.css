@@ -333,7 +333,19 @@ figcaption {
 }
 
 .post-list-item header {
-  margin-bottom: var(--spacing-4);
+  margin-bottom: 5px;
+}
+
+header > h2 {
+  margin: 0 !important;
+}
+
+header > h2 > span {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  white-space: nowrap;
 }
 
 .header-link-home {

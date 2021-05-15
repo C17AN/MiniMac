@@ -5,12 +5,19 @@
   }
 }
 
+.Message-content {
+  margin-top: 45px !important;
+  height: calc(100% - 45px);
+  margin-bottom: 0;
+}
+
 @media only screen and (max-width: 600px) {
   .Message {
     position: static;
-    .post-content {
+    .Message-content {
       margin: 0;
-      margin-top: 2rem !important;
+      overflow: hidden;
+      margin-top: 39px !important;
     }
   }
 }

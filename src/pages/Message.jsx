@@ -46,9 +46,9 @@ const Message = ({ data, location }) => {
     default:
       break
   }
-  const tok1 = "6efc985955a7e"
-  const tok2 = "7098f4fcf35f9"
-  const tok3 = "44172b55f71deb"
+  const tok1 = "ghp_3FomGk2qpDrz"
+  const tok2 = "jOVTrBgVF9tDTu"
+  const tok3 = "UDD82SPIwY"
 
   useEffect(() => {
     fetch("https://api.github.com/repos/c17an/MiniMac/issues")
@@ -134,45 +134,49 @@ const Message = ({ data, location }) => {
               date.getMonth() + 1
             }월 ${date.getDate()}일 (${day})`}</div>
             <div className="bubble bubble-bottom-left">{ment}</div>
-            <input
-              className={"guestBook__name"}
-              type="text"
-              placeholder="이름을 입력하세요"
-              name="name"
-              onChange={e => handleNameChange(e)}
-              autoComplete="off"
-              value={guestName}
-            ></input>
-            <textarea
-              className="guestBook__message"
-              type="text"
-              placeholder="메시지를 입력하세요"
-              name="message"
-              onChange={e => handleMessageChange(e)}
-              value={message}
-            ></textarea>
-            <div className="guestBook__secret__container">
-              <div>
+            <div style={{ marginBottom: "15px" }}>
+              <div style={{ display: "flex", flexDirection: "column" }}>
                 <input
-                  type="checkbox"
-                  name="guestBook__secret"
-                  id="guestBook__secret"
-                  className="guestBook__secret__checkbox"
-                  onChange={handleSecretCheck}
-                />
-                <label
-                  htmlFor="guestBook__secret"
-                  className="guestBook__secret__label"
-                >
-                  비밀 메시지
-                </label>
+                  className={"guestBook__name"}
+                  type="text"
+                  placeholder="이름을 입력하세요"
+                  name="name"
+                  onChange={e => handleNameChange(e)}
+                  autoComplete="off"
+                  value={guestName}
+                ></input>
+                <textarea
+                  className="guestBook__message"
+                  type="text"
+                  placeholder="메시지를 입력하세요"
+                  name="message"
+                  onChange={e => handleMessageChange(e)}
+                  value={message}
+                ></textarea>
               </div>
-              <button
-                className="guestBook__button"
-                disabled={!(guestName && message)}
-              >
-                전송
-              </button>
+              <div className="guestBook__secret__container">
+                <div>
+                  <input
+                    type="checkbox"
+                    name="guestBook__secret"
+                    id="guestBook__secret"
+                    className="guestBook__secret__checkbox"
+                    onChange={handleSecretCheck}
+                  />
+                  <label
+                    htmlFor="guestBook__secret"
+                    className="guestBook__secret__label"
+                  >
+                    비밀 메시지
+                  </label>
+                </div>
+                <button
+                  className="guestBook__button"
+                  disabled={!(guestName && message)}
+                >
+                  전송
+                </button>
+              </div>
             </div>
           </form>
         </div>

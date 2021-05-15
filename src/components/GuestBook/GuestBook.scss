@@ -29,7 +29,7 @@
 .guestBook__guestList {
   overflow-y: scroll;
   overflow-x: visible;
-  flex: 3;
+  flex: 2;
   margin-right: 10vw;
 }
 
@@ -39,15 +39,14 @@
 
 .guestBook__form {
   height: 100%;
-  padding: 1.5rem 1.5rem 0 1.5rem;
+  padding: 0 1.5rem 0 1.5rem;
   border-top: 1px solid hsla(0, 0%, 0%, 0.07);
   border-left: 1px solid #cdcdcd;
-  margin-top: 1rem;
   margin-right: -4rem;
   display: flex;
   flex: 1;
+  justify-content: space-between;
   flex-direction: column;
-  justify-content: flex-end;
 }
 
 .guestBook__secret__container {
@@ -95,16 +94,15 @@
 
 .guestBook__date {
   text-align: center;
-  position: relative;
-  top: -14.5rem;
   font-size: 0.7rem;
+  margin-top: 30px;
 }
 
 .bubble {
   display: inline-block;
   position: relative;
+  bottom: 120px;
   font-size: 0.8rem;
-  top: -13.5rem;
   width: 85%;
   background: rgb(228, 227, 230);
   border-radius: 16px;
@@ -139,6 +137,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    overflow: hidden !important;
   }
   .guestBook__secret__container {
     display: flex;
@@ -153,6 +152,7 @@
     border-left: none;
     margin-right: 0;
     padding: 0;
+    justify-content: unset;
   }
   .guestBook__button {
     padding: 0.7rem 0;

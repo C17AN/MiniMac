@@ -401,8 +401,8 @@ header > h2 > span {
   box-shadow: 0px 5px 8px 5px rgba(0, 0, 0, 0.4);
 }
 
-.gatsby-resp-image-wrapper {
-  margin-bottom: 2rem !important;
+.gatsby-resp-image-background-image {
+  margin: 1.2rem 0 !important;
 }
 
 .gatsby-resp-image-image {

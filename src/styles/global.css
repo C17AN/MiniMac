@@ -153,6 +153,7 @@ h6 {
   font-size: 0.88rem;
   margin-top: 0;
   font-weight: normal;
+  margin: 0;
 }
 
 h1 > a {
@@ -185,6 +186,10 @@ ol {
   padding: var(--spacing-0);
   list-style-position: inside;
   list-style-image: none;
+}
+
+figure {
+  margin: 0;
 }
 
 ul li,

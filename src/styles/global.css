@@ -403,6 +403,7 @@ header > h2 > span {
 
 .gatsby-resp-image-background-image {
   margin: 1.2rem 0 !important;
+  border-radius: 8px;
 }
 
 .gatsby-resp-image-image {

@@ -6,7 +6,7 @@ import "./IconElement.scss"
 const IconElement = ({ fileName, iconLabel }) => {
   const Icon = useStaticQuery(graphql`
     query {
-      ActivityIcon: file(relativePath: { eq: "Activity-min.png" }) {
+      MapIcon: file(relativePath: { eq: "Map-min.png" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid

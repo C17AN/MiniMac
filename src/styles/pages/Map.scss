@@ -1,0 +1,10 @@
+.Map-content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0 !important;
+}

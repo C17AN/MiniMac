@@ -24,7 +24,7 @@ const Home = ({ data, location }) => {
         <IconElement fileName="Project" iconLabel="프로젝트"></IconElement>
         <IconElement fileName="Music" iconLabel="음악"></IconElement>
         <IconElement fileName="Note" iconLabel="포스트"></IconElement>
-        <IconElement fileName="Activity" iconLabel="활동"></IconElement>
+        <IconElement fileName="Map" iconLabel="지도"></IconElement>
         <IconElement fileName="Message" iconLabel="메시지"></IconElement>
         <IconElement fileName="Terminal" iconLabel="터미널"></IconElement>
         <IconElement fileName="Contact" iconLabel="소개"></IconElement>

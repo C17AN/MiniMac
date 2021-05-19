@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import Layout from "../components/layout"
 import PostTemplate from "../components/PostTemplate/PostTemplate"
 import ReactMapGL, { Source, Layer } from "react-map-gl"
+import mapboxgl from "mapbox-gl/dist/mapbox-gl"
 import "../styles/pages/Map.scss"
 import styled from "styled-components"
 import mapData from "../mapData.json"
@@ -104,6 +105,8 @@ const layerStyle = {
 }
 
 function Map({ data, location }) {
+  mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default
+
   const [viewport, setViewport] = useState({
     width: 400,
     height: 400,

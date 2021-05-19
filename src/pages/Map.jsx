@@ -105,7 +105,11 @@ const layerStyle = {
 }
 
 function Map({ data, location }) {
-  mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default
+  useEffect(() => {
+    return () => {
+      mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default
+    }
+  }, [])
 
   const [viewport, setViewport] = useState({
     width: 400,

@@ -3,7 +3,7 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import "./IconElement.scss"
 
-const IconElement = ({ fileName, iconLabel }) => {
+const IconElement = ({ fileName, iconLabel, customLink }) => {
   const Icon = useStaticQuery(graphql`
     query {
       MapIcon: file(relativePath: { eq: "Map-min.png" }) {
@@ -62,9 +62,26 @@ const IconElement = ({ fileName, iconLabel }) => {
           }
         }
       }
+      ActivityIcon: file(relativePath: { eq: "Activity-min.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 108) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
-  return (
+
+  return customLink ? (
+    <a className="app-icon" href={`${customLink}`} target="_blank">
+      <Img
+        fluid={Icon[`${fileName}Icon`].childImageSharp.fluid}
+        alt="Icon"
+        style={{ width: "100%" }}
+      ></Img>
+      <label>{iconLabel}</label>
+    </a>
+  ) : (
     <Link className="app-icon" to={`/${fileName}`}>
       <Img
         fluid={Icon[`${fileName}Icon`].childImageSharp.fluid}

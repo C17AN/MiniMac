@@ -21,7 +21,13 @@ const Home = ({ data, location }) => {
         </p>
       </div>
       <div id="apps-dock">
-        <IconElement fileName="Project" iconLabel="프로젝트"></IconElement>
+        <IconElement
+          fileName="Activity"
+          iconLabel="포트폴리오"
+          customLink={
+            "https://www.notion.so/chamming2/8f0f42b804e147a4bb7b4617403a729c"
+          }
+        ></IconElement>
         <IconElement fileName="Music" iconLabel="음악"></IconElement>
         <IconElement fileName="Note" iconLabel="포스트"></IconElement>
         <IconElement fileName="Map" iconLabel="지도"></IconElement>

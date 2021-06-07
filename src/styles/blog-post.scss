@@ -1,17 +1,3 @@
-.post-top {
-  display: flex;
-  align-items: center;
-  padding-left: 1rem;
-  background-color: rgb(234, 229, 229);
-  width: inherit;
-  min-width: 800px;
-  height: 3rem;
-  position: fixed;
-  overflow: hidden;
-  border-radius: 12px 12px 0 0;
-  z-index: 2;
-}
-
 .post-container {
   position: absolute;
   opacity: 0.98;
@@ -69,10 +55,8 @@
     min-width: auto;
   }
   .post-container {
-    width: 100%;
-    height: 100%;
+    width: 92%;
     min-width: auto;
-    border-radius: 0;
   }
   .post-content {
     padding: 3rem 0.7rem 0.7rem 0.7rem;
@@ -84,5 +68,19 @@
         width: 100%;
       }
     }
+  }
+}
+
+.Post {
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0 !important;
   }
 }

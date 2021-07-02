@@ -25,7 +25,7 @@ const Home = ({ data, location }) => {
           fileName="Activity"
           iconLabel="포트폴리오"
           customLink={
-            "https://www.notion.so/chamming2/8f0f42b804e147a4bb7b4617403a729c"
+            "https://www.notion.so/c17an/3a652ae4279f4e78a30135125d6ec48c"
           }
         ></IconElement>
         <IconElement fileName="Music" iconLabel="음악"></IconElement>
